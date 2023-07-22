@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+body {
+  position: relative;
+}
+
+.landing {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 130px;
+}
+
+.landing p {
+  flex: 1;
+  color: #cb3931;
+  font-weight: 400;
+  margin-top: 70px;
+}
+
+.landing .img-box {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 450px;
+  background-color: #cb3931;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.landing .img-box img {
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.info {
+  position: relative;
+  width: 90%;
+  justify-self: flex-end;
+  background: #000;
+  background-color: #f0f0f0;
+  padding: 80px;
+  border-radius: 20px;
+  margin-left: auto;
+  transform: translateY(-23%);
+}
+
+.info header {
+  width: 100%;
+  height: 100px;
+}
+
+.info h2 {
+  font-size: 5rem;
+}
+
+.info p {
+  margin-top: 20px;
+  color: #cb3931;
+}
+
+.info .heading {
+  display: flex;
+  align-items: center;
+}
+
+.info .heading ul {
+  margin-left: 60px;
+}
+
+.info .heading ul li {
+  color: #cb3931;
+}
+
+.info .box-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info .box-btw .box-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+footer {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 52px;
+  margin-top: 48px;
+}
+
+footer h3 {
+  color: #cb3931;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+footer .left {
+  flex: 3;
+}
+
+footer .left .info-box,
+footer .right .info-box {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+footer .left .info-box p,
+footer .right .info-box p {
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+footer .left .info-box .position,
+footer .right .position {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+footer .left .info-box .position p {
+  color: #cb3931;
+}
+
+footer .right {
+  flex: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .w-50 {
+    width: 95%;
+    gap: 20px;
+  }
+
+  .info {
+    width: 95%;
+    padding: 20px;
+    transform: translateY(0);
+  }
+
+  .info h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    flex-flow: column wrap;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .info h2 {
+    font-size: 1.5rem;
+  }
+
+  footer .right,
+  footer .left {
+    width: 100%;
+    flex: 1;
+  }
+}
